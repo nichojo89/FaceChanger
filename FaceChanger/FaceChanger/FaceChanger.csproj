@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.2.0.562" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.Face" Version="2.4.0-preview" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SkiaSharp" Version="2.80.3" />
+    <PackageReference Include="SkiaSharp.Views" Version="2.80.3" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.3" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Nose.png" />
+    <EmbeddedResource Include="Images\Mouth.png" />
+    <EmbeddedResource Include="Images\LeftEye.png" />
+    <EmbeddedResource Include="Images\RightEye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\" />
+    <None Remove="Images\Nose.png" />
+    <None Remove="Images\Mouth.png" />
+    <None Remove="Images\LeftEye.png" />
+    <None Remove="Images\RightEye.png" />
+    <None Remove="Xam.Plugin.Media" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+</Project>
